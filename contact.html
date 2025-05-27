@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Muhammad Ikram Ul Haq">
+    <meta name="author" content="Muhammad Ikram Ul Haq">
+    <title>Contact Me - Muhammad Ikram Ul Haq</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📧</text></svg>">
+
+    <style>
+        /* Basic Reset */
+        body, h1, h2, h3, p, ul, form, label, input, textarea, div {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            background-color: #f4f7f6;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.1);
+        }
+
+        /* Header Styles */
+        header {
+            background-color: #2c3e50;
+            color: #ecf0f1;
+            padding: 20px 0;
+            text-align: center;
+            border-bottom: 4px solid #1abc9c;
+        }
+        header h1 { margin: 0; font-size: 2.5em; }
+
+        /* Navigation Bar Styles */
+        nav {
+            background-color: #34495e;
+            padding: 15px 0;
+            text-align: center;
+        }
+        nav ul { list-style: none; padding: 0; margin: 0; }
+        nav ul li { display: inline-block; margin: 0 15px; }
+        nav ul li a {
+            color: #ecf0f1;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1em;
+            padding: 8px 12px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+        nav ul li a:hover, nav ul li a.active {
+            background-color: #1abc9c;
+            color: #2c3e50;
+        }
+
+        /* Main Content Styles */
+        main {
+            flex-grow: 1;
+        }
+        section {
+            padding: 30px 0;
+            border-bottom: 1px dashed #bdc3c7;
+        }
+        section:last-of-type {
+            border-bottom: none;
+        }
+        h2 {
+            color: #2c3e50;
+            margin-bottom: 20px;
+            font-size: 2em;
+            border-left: 5px solid #1abc9c;
+            padding-left: 10px;
+        }
+        
+        .contact-details {
+            background-color: #eaf6ff; /* Light blue background for details */
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+            border: 1px solid #c1d9e9;
+        }
+        .contact-details p {
+            font-size: 1.1em;
+            margin-bottom: 10px;
+            color: #2c3e50; /* Dark blue text */
+        }
+        .contact-details strong {
+            color: #1abc9c; /* Teal for labels */
+            min-width: 120px;
+            display: inline-block;
+        }
+        .contact-details a {
+            color: #2980b9; /* Link blue */
+            text-decoration: none;
+        }
+        .contact-details a:hover {
+            text-decoration: underline;
+        }
+
+        .map-container {
+            position: relative;
+            overflow: hidden;
+            padding-top: 56.25%; /* 16:9 Aspect Ratio */
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+        }
+        .map-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+        
+        /* Simple Contact Form (Optional, non-functional without backend) */
+        .contact-form {
+            background-color: #f9f9f9;
+            padding: 25px;
+            border-radius: 8px;
+            border: 1px solid #e0e0e0;
+        }
+        .contact-form h3 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #34495e;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: #555;
+        }
+        .form-group input[type="text"],
+        .form-group input[type="email"],
+        .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 1em;
+        }
+        .form-group textarea {
+            resize: vertical;
+            min-height: 100px;
+        }
+        .form-group button {
+            display: inline-block;
+            background-color: #1abc9c; /* Teal */
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1.1em;
+            transition: background-color 0.3s;
+        }
+        .form-group button:hover {
+            background-color: #16a085; /* Darker Teal */
+        }
+
+
+        /* Footer Styles */
+        footer {
+            background-color: #2c3e50;
+            color: #ecf0f1;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: auto;
+            border-top: 4px solid #1abc9c;
+        }
+        footer p { margin: 5px 0; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Contact Information</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="hobbies.html">My Hobbies</a></li>
+            <li><a href="media.html">My Favorite Media</a></li>
+            <li><a href="contact.html" class="active">Contact Me</a></li>
+        </ul>
+    </nav>
+
+    <main class="container">
+        <section id="my-details">
+            <h2>Get in Touch</h2>
+            <div class="contact-details">
+                <p><strong>Name:</strong> Muhammad Ikram Ul Haq</p>
+                <p><strong>Student ID:</strong> 33827</p>
+                <p><strong>Designation:</strong> Student</p> <p><strong>Email:</strong> <a href="mailto:ikram33827@example.com">ikram33827@example.com</a></p> <p><strong>Contact #:</strong> +92 300 1234567</p> <p><strong>Group Member:</strong> MUHAMMAD SHAYAN TAHIR (ID: 32491)</p>
+            </div>
+        </section>
+
+        <section id="office-location">
+            <h2>My Office Location (Example)</h2>
+            <p>Below is a map showing the example location of my office/university. Replace the <code>src</code> in the iframe with the correct Google Maps embed code for your desired location.</p>
+            <div class="map-container">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3324.24057198941!2d73.05501681520276!3d33.60495008073777!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38df94990e8f297b%3A0x8c9f0555057b9f1d!2sCOMSATS%20University%20Islamabad%2C%20Attock%20Campus!5e0!3m2!1sen!2s!4v1678886412345" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+             <p style="margin-top:10px; font-size:0.9em; text-align:center;">
+                <em>(This is a placeholder map. You'll need to generate an embed code from Google Maps for your specific location.)</em>
+            </p>
+        </section>
+
+        <section id="contact-form-section">
+            <h2>Send Me a Message (Demo)</h2>
+            <div class="contact-form">
+                <h3>Quick Contact Form</h3>
+                <form action="#" method="POST"> <div class="form-group">
+                        <label for="name">Your Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Your Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject:</label>
+                        <input type="text" id="subject" name="subject">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit">Send Message</button>
+                    </div>
+                </form>
+                 <p style="margin-top:10px; font-size:0.9em; text-align:center;">
+                    <em>Note: This form is for demonstration purposes only and is not functional.</em>
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Muhammad Ikram Ul Haq (33827) & MUHAMMAD SHAYAN TAHIR (32491). All Rights Reserved.</p>
+        <p>Contact Page</p>
+    </footer>
+
+</body>
+</html>

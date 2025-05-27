@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Favorite Media of Muhammad Ikram Ul Haq">
+    <meta name="author" content="Muhammad Ikram Ul Haq">
+    <title>My Favorite Media - Muhammad Ikram Ul Haq</title>
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎬</text></svg>">
+
+    <style>
+        /* Basic Reset */
+        body,
+        h1,
+        h2,
+        h3,
+        p,
+        ul,
+        ol,
+        figure,
+        blockquote,
+        div {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            background-color: #f4f7f6;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Header Styles */
+        header {
+            background-color: #2c3e50;
+            color: #ecf0f1;
+            padding: 20px 0;
+            text-align: center;
+            border-bottom: 4px solid #1abc9c;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        /* Navigation Bar Styles */
+        nav {
+            background-color: #34495e;
+            padding: 15px 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            display: inline-block;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #ecf0f1;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1em;
+            padding: 8px 12px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        nav ul li a:hover,
+        nav ul li a.active {
+            background-color: #1abc9c;
+            color: #2c3e50;
+        }
+
+        /* Main Content Styles */
+        main {
+            flex-grow: 1;
+        }
+
+        section {
+            padding: 30px 0;
+            border-bottom: 1px dashed #bdc3c7;
+        }
+
+        section:last-of-type {
+            border-bottom: none;
+        }
+
+        h2 {
+            color: #2c3e50;
+            margin-bottom: 20px;
+            font-size: 2em;
+            border-left: 5px solid #1abc9c;
+            padding-left: 10px;
+        }
+
+        h3 {
+            color: #34495e;
+            margin-top: 20px;
+            margin-bottom: 15px;
+            font-size: 1.5em;
+        }
+
+        p {
+            margin-bottom: 15px;
+            color: #555;
+        }
+
+        /* Media Layout Styles */
+        .media-layout {
+            display: flex;
+            flex-wrap: wrap;
+            /* Allow wrapping on smaller screens */
+            gap: 20px;
+            /* Space between columns */
+        }
+
+        .media-column {
+            flex: 1;
+            /* Each column takes equal space */
+            min-width: 300px;
+            /* Minimum width before wrapping */
+            padding: 15px;
+            background-color: #fdfdfd;
+            border: 1px solid #e0e0e0;
+            border-radius: 6px;
+        }
+
+        .media-column img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .media-column iframe {
+            width: 100%;
+            /* Make iframes responsive */
+            height: 315px;
+            /* Default height, adjust as needed */
+            border: none;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        .social-link {
+            display: block;
+            margin-bottom: 10px;
+            padding: 10px;
+            background-color: #e74c3c;
+            /* Red for social links */
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            text-align: center;
+            transition: background-color 0.3s;
+        }
+
+        .social-link:hover {
+            background-color: #c0392b;
+            /* Darker red */
+        }
+
+        .social-link.twitter {
+            background-color: #3498db;
+        }
+
+        /* Blue for Twitter */
+        .social-link.twitter:hover {
+            background-color: #2980b9;
+        }
+
+        .social-link.linkedin {
+            background-color: #0077b5;
+        }
+
+        /* LinkedIn Blue */
+        .social-link.linkedin:hover {
+            background-color: #005582;
+        }
+
+
+        .video-container {
+            margin-bottom: 20px;
+        }
+
+        .video-container p {
+            font-weight: bold;
+            color: #34495e;
+        }
+
+        .image-gallery figure {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .image-gallery figcaption {
+            font-style: italic;
+            color: #777;
+            margin-top: 5px;
+        }
+
+        /* Footer Styles */
+        footer {
+            background-color: #2c3e50;
+            color: #ecf0f1;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: auto;
+            border-top: 4px solid #1abc9c;
+        }
+
+        footer p {
+            margin: 5px 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>My Favorite Media</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="hobbies.html">My Hobbies</a></li>
+            <li><a href="media.html" class="active">My Favorite Media</a></li>
+            <li><a href="contact.html">Contact Me</a></li>
+        </ul>
+    </nav>
+
+    <main class="container">
+        <section id="social-media-and-images">
+            <h2>Social Media & Images</h2>
+            <div class="media-layout">
+                <div class="media-column">
+                    <h3>My Favorite Social Media Posts/Links</h3>
+                    <p>Here are some (placeholder) links to social media profiles or posts I find interesting. Replace
+                        these with actual links.</p>
+                    <a href="https://www.linkedin.com/in/muhammadikramulhaq" target="_blank"
+                        class="social-link linkedin">My LinkedIn Profile (Example)</a>
+                    <a href="https://twitter.com/explore/tabs/trending" target="_blank"
+                        class="social-link twitter">Twitter Trending (Example)</a>
+                    <a href="https://www.facebook.com/groups/webdev" target="_blank" class="social-link"
+                        style="background-color:#3b5998;">Web Dev Facebook Group (Example)</a>
+
+                    <h3>Favorite Images</h3>
+                    <div class="image-gallery">
+                        <figure>
+                            <img src="https://images.pexels.com/photos/1591061/pexels-photo-1591061.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1 "
+                                alt="Four letter tiles spelling 'FIX'">
+                            <figcaption>A cool fixed image from my collection.</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80"
+                                alt="Laptop with code"
+                                onerror="this.onerror=null;this.src='https://placehold.co/600x400/cccccc/333333?text=Image+Not+Found';">
+                            <figcaption>Inspiring Tech (Online Image)</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80"
+                                alt="Desk with tech gadgets"
+                                onerror="this.onerror=null;this.src='https://placehold.co/600x400/cccccc/333333?text=Image+Not+Found';">
+                            <figcaption>Modern Workspace (Online Image)</figcaption>
+                        </figure>
+                    </div>
+                </div>
+
+                <div class="media-column">
+                    <h3>My Favorite YouTube Videos</h3>
+                    <p>Here are some YouTube videos I enjoy or find informative. These are placeholders, replace with
+                        actual video IDs.</p>
+
+                    <div class="video-container">
+                        <p>1. Tech Quickie: What is API?</p>
+                        <iframe src="https://www.youtube.com/embed/s7wmiS2mSXY" title="YouTube video player"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                    <div class="video-container">
+                        <p>2. Crash Course Computer Science: The CPU</p>
+                        <iframe src="https://www.youtube.com/embed/FZGugFqdr60" title="YouTube video player"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                    <div class="video-container">
+                        <p>3. Fireship: 100+ Computer Science Concepts Explained</p>
+                        <iframe src="https://www.youtube.com/embed/zOjov-2OZ0E" title="YouTube video player"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                    <div class="video-container">
+                        <p>4. MKBHD: Smartphone Awards</p>
+                        <iframe src="https://www.youtube.com/embed/DyX-QZZBgpw" title="YouTube video player"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                    <div class="video-container">
+                        <p>5. National Geographic: Beautiful Nature</p>
+                        <iframe src="https://www.youtube.com/embed/1L1RdktmbF0" title="YouTube video player"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Muhammad Ikram Ul Haq (33827) & MUHAMMAD SHAYAN TAHIR (32491). All Rights Reserved.</p>
+        <p>Favorite Media Showcase</p>
+    </footer>
+
+</body>
+
+</html>

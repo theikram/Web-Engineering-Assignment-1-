@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of Muhammad Ikram Ul Haq - Home Page">
+    <meta name="author" content="Muhammad Ikram Ul Haq">
+    <title>Home - Muhammad Ikram Ul Haq</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌐</text></svg>">
+
+    <style>
+        /* Basic Reset */
+        body, h1, h2, h3, p, ul, ol, table, figure, blockquote {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            background-color: #f4f7f6; /* Light grayish green background */
+            color: #333; /* Dark gray text */
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #ffffff; /* White content background */
+            border-radius: 8px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.1);
+        }
+
+        /* Header Styles */
+        header {
+            background-color: #2c3e50; /* Dark Blue */
+            color: #ecf0f1; /* Light Grey/White text */
+            padding: 20px 0;
+            text-align: center;
+            border-bottom: 4px solid #1abc9c; /* Teal accent */
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            letter-spacing: 1px;
+        }
+        header p {
+            font-size: 1.1em;
+            color: #bdc3c7; /* Lighter gray for subtitle */
+        }
+
+        /* Navigation Bar Styles */
+        nav {
+            background-color: #34495e; /* Wet Asphalt Blue */
+            padding: 15px 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            display: inline-block; /* Changed from inline to inline-block for better spacing control */
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #ecf0f1; /* Light Grey/White text */
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1em;
+            padding: 8px 12px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        nav ul li a:hover, nav ul li a.active {
+            background-color: #1abc9c; /* Teal */
+            color: #2c3e50; /* Dark Blue text on hover */
+        }
+
+        /* Main Content Styles */
+        main {
+            flex-grow: 1; /* Ensures main content takes available space */
+        }
+
+        section {
+            padding: 30px 0;
+            border-bottom: 1px dashed #bdc3c7; /* Light gray dashed border */
+        }
+        section:last-of-type {
+            border-bottom: none;
+        }
+
+        h2 {
+            color: #2c3e50; /* Dark Blue */
+            margin-bottom: 20px;
+            font-size: 2em;
+            border-left: 5px solid #1abc9c; /* Teal accent */
+            padding-left: 10px;
+        }
+        
+        h3 {
+            color: #34495e; /* Wet Asphalt Blue */
+            margin-top: 20px;
+            margin-bottom: 10px;
+            font-size: 1.5em;
+        }
+
+        .internal-nav a {
+            display: inline-block;
+            margin-right: 15px;
+            margin-bottom: 10px;
+            padding: 8px 15px;
+            background-color: #1abc9c; /* Teal */
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .internal-nav a:hover {
+            background-color: #16a085; /* Darker Teal */
+        }
+
+        article p, article ul li {
+            margin-bottom: 15px;
+            color: #555; /* Slightly lighter text for paragraphs */
+        }
+        article ul {
+            list-style-position: inside;
+            padding-left: 20px;
+        }
+
+
+        /* Footer Styles */
+        footer {
+            background-color: #2c3e50; /* Dark Blue */
+            color: #ecf0f1; /* Light Grey/White text */
+            text-align: center;
+            padding: 20px 0;
+            margin-top: auto; /* Pushes footer to the bottom */
+            border-top: 4px solid #1abc9c; /* Teal accent */
+        }
+
+        footer p {
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Muhammad Ikram Ul Haq</h1>
+        <p>Student ID: 33827</p>
+        <p>Welcome to My Personal Portfolio</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="hobbies.html">My Hobbies</a></li>
+            <li><a href="media.html">My Favorite Media</a></li>
+            <li><a href="contact.html">Contact Me</a></li>
+        </ul>
+    </nav>
+
+    <main class="container">
+        <section id="introduction">
+            <h2>Introduction</h2>
+            <article>
+                <p>Hello and welcome to my personal portfolio website! I am <strong>Muhammad Ikram Ul Haq</strong> (Student ID: 33827). This website is a small project to showcase my skills in HTML and CSS, as well as to share a little bit about myself, my interests, and how to get in touch.</p>
+                <p>This project is a collaborative effort with my group member, <strong>MUHAMMAD SHAYAN TAHIR</strong> (Student ID: 32491).</p>
+                <p>Navigate through the pages to learn more about my hobbies, favorite media, and contact information. This home page itself contains several sections you can jump to using the links below.</p>
+            </article>
+        </section>
+
+        <section id="internal-links">
+            <h2>Quick Navigation (On This Page)</h2>
+            <div class="internal-nav">
+                <a href="#about-this-site">About This Site</a>
+                <a href="#learning-journey">My Learning Journey</a>
+                <a href="#future-goals">Future Goals</a>
+            </div>
+        </section>
+
+        <section id="about-this-site">
+            <h2>About This Site</h2>
+            <article>
+                <p>This website has been crafted using fundamental web technologies. The primary goal was to effectively use semantic HTML5 tags to structure the content logically and apply internal CSS for styling to create a visually appealing and user-friendly experience.</p>
+                <h3>Key Features Implemented:</h3>
+                <ul>
+                    <li>Semantic HTML5 tags like <code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code>, <code>&lt;main&gt;</code>, <code>&lt;section&gt;</code>, <code>&lt;article&gt;</code>, and <code>&lt;footer&gt;</code>.</li>
+                    <li>Internal CSS for all styling, ensuring a consistent look and feel across different pages.</li>
+                    <li>Responsive design considerations with viewport meta tag.</li>
+                    <li>Clear navigation structure for easy access to all pages.</li>
+                    <li>Internal page links for quick access to specific content on this home page.</li>
+                </ul>
+            </article>
+        </section>
+
+        <section id="learning-journey">
+            <h2>My Learning Journey</h2>
+            <article>
+                <p>My journey into web development started with a curiosity about how websites are built. I began by learning the basics of HTML to structure web pages and then moved on to CSS to style them. This portfolio is a testament to my initial steps in this exciting field.</p>
+                <p>I am focusing on understanding how different HTML elements work together and how CSS properties can be used to transform a plain document into something more engaging. I am also learning about the importance of web standards and accessibility.</p>
+            </article>
+        </section>
+
+        <section id="future-goals">
+            <h2>Future Goals</h2>
+            <article>
+                <p>Looking ahead, I aim to delve deeper into web development. My future learning goals include:</p>
+                <ul>
+                    <li>Mastering advanced CSS techniques, including Flexbox and Grid.</li>
+                    <li>Learning JavaScript to add interactivity to websites.</li>
+                    <li>Exploring front-end frameworks like React or Vue.js.</li>
+                    <li>Understanding back-end development concepts.</li>
+                </ul>
+                <p>I am excited about the possibilities that web development offers and look forward to building more complex and dynamic projects in the future.</p>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Muhammad Ikram Ul Haq (33827) & MUHAMMAD SHAYAN TAHIR (32491). All Rights Reserved.</p>
+        <p>A simple HTML & CSS portfolio assignment.</p>
+    </footer>
+
+</body>
+</html>
